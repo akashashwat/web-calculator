@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
+      integrity="sha512-ZnR2wlLbSbr8/c9AgLg3jQPAattCUImNsae6NHYnS9KrIwRdcY9DxFotXhNAKIKbAXlRnujIqUWoXXwqyFOeIQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="wave">
+        <span style="--i: 1">C</span>
+        <span style="--i: 2">A</span>
+        <span style="--i: 3">L</span>
+        <span style="--i: 4">C</span>
+        <span style="--i: 5">U</span>
+        <span style="--i: 6">L</span>
+        <span style="--i: 7">A</span>
+        <span style="--i: 8">T</span>
+        <span style="--i: 9">O</span>
+        <span style="--i: 10">R</span>
+      </div>
+
+      <div id="calculator">
+        <div>
+          <input id="input" class="text" placeholder="0" disabled />
+        </div>
+
+        <div class="calculator-buttons">
+          <div>
+            <button class="btn color-1">AC</button>
+            <button class="btn">7</button>
+            <button class="btn">4</button>
+            <button class="btn">1</button>
+            <button class="btn">0</button>
+          </div>
+          <div>
+            <button class="btn color-1">DEL</button>
+            <button class="btn">8</button>
+            <button class="btn">5</button>
+            <button class="btn">2</button>
+            <button class="btn">00</button>
+          </div>
+          <div>
+            <button class="btn color-1">%</button>
+            <button class="btn">9</button>
+            <button class="btn">6</button>
+            <button class="btn">3</button>
+            <button class="btn">.</button>
+          </div>
+          <div>
+            <button class="btn color-2">/</button>
+            <button class="btn color-2">+</button>
+            <button class="btn color-2">-</button>
+            <button class="btn color-2">*</button>
+            <button class="btn color-2">=</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button id="toggle">
+      <i class="bi-moon-fill" id="toggleDark"></i>
+    </button>
+
+    <footer>
+      <p>Made with ❤️ by Shubham Patel</p>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  min-height: 90vh;
+  font-family: "Poppins", sans-serif;
+}
+
+.wrapper {
+  width: 100%;
+  min-width: 320px;
+  max-width: 505px;
+}
+
+.wave {
+  position: relative;
+  color: rgb(201, 201, 203);
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-shadow: 0.5px 0.5px 3px #ff99cc, -0.5px 0.5px 3px #ff99cc;
+  margin-bottom: 3rem;
+}
+
+.wave span {
+  display: inline-block;
+  animation: flip 2s infinite;
+  animation-delay: calc(0.2s * var(--i));
+}
+
+@keyframes flip {
+  0%,
+  85% {
+    transform: rotateY(360deg);
+  }
+}
+
+#calculator {
+  margin: 8px;
+  border-radius: 12px;
+  padding: 20px;
+  height: 340px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border: 1px solid #d3d6d6;
+}
+
+#display {
+  display: flex;
+}
+
+.calculator-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border: 0;
+}
+
+input {
+  width: 100%;
+  max-width: 435px;
+  height: 50px;
+  font-family: "Digital-7";
+  font-size: 42px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  padding: 5px 15px 5px 5px;
+  background: transparent;
+  text-align: end;
+  color: rgb(176, 136, 176);
+  border: 1px solid #d3d6d6;
+}
+
+input::placeholder {
+  color: rgb(176, 136, 176);
+}
+
+.btn {
+  border: 1px solid #b1b2b3;
+  width: 100%;
+  max-width: 95px;
+  height: 40px;
+  border-radius: 8px;
+  cursor: pointer;
+  background: transparent;
+  color: rgb(153, 153, 155);
+  background-color: #f1f3f4;
+  margin: 5px;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  outline: none;
+}
+
+.color-1 {
+  color: #fe0000;
+}
+
+.color-2 {
+  color: #5b9a8b;
+}
+
+.btn:hover {
+  background-color: #f0ebeb;
+}
+
+.btn:active {
+  border-color: white;
+  transition: all ease;
+}
+
+.animation {
+  background-color: #f0ebeb;
+}
+
+#toggle {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  height: 3.5em;
+  width: 3.5em;
+  border-radius: 100%;
+}
+
+#toggle:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+i {
+  font-size: 22px;
+  font-weight: bold;
+  font-style: normal;
+  transition: all 0.1s;
+}
+
+footer {
+  position: absolute;
+  color: rgb(153, 153, 155);
+  bottom: 0;
+}
+
+@media screen and (max-width: 441px) {
+  .wave {
+    font-size: 2.1rem;
+  }
+
+  .text {
+    padding: 0 5px 0 0;
+  }
+
+  #toggle {
+    position: absolute;
+    bottom: 35px;
+    left: 50%;
+    height: 2.5em;
+    width: 2.5em;
+    border-radius: 100%;
+  }
+
+  i {
+    font-size: 18px;
+    transition: all 0.1s;
+  }
+
+  footer p {
+    font-size: 13px;
+  }
+}
